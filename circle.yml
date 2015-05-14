@@ -12,3 +12,5 @@ dependencies:
 test:
   override:
     - set -o pipefail && xcodebuild -scheme WebKitPlus-iOS -sdk iphonesimulator -derivedDataPath build | xcpretty -c
+    - set -o pipefail && xcodebuild -project DemoApp/SimpleBrowser.xcodeproj -sdk iphonesimulator -scheme SimpleBrowser -derivedDataPath build | xcpretty -c
+
